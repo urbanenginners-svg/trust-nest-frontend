@@ -1,3 +1,4 @@
+import { LoginForm } from '@/components/auth/login';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield } from 'lucide-react';
 import { useState } from 'react';
@@ -47,7 +48,7 @@ const AuthPage = () => {
                             exit={{ opacity: 0, x: 20 }}
                             transition={{ duration: 0.3 }}
                         >
-                            {/* <LoginForm onSwitchToSignUp={() => setActiveTab('signup')} /> */}
+                            <LoginForm onSwitchToSignUp={() => setActiveTab('signup')} />
                         </motion.div>
                     ) : (
                         <motion.div
