@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Shield, Users, FlaskConical, CheckCircle } from 'lucide-react';
+import { Outlet } from 'react-router-dom';
 
 
 const features = [
@@ -80,6 +81,7 @@ const AuthLayout = () => {
                     </div>
                 </div>
             </div>
+            <Outlet />
         </div>
     )
 }

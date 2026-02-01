@@ -1,5 +1,6 @@
 
 import AuthLayout from '@/Layouts/AuthLayout';
+import AuthPage from '@/Pages/AuthPage';
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: 'login',
-                element: <></>
+                element: <AuthPage />
             }
         ]
     }
